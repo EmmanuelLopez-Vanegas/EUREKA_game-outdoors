@@ -244,5 +244,10 @@ def main():
         else:
             print(':)')
 
+while True:
+    when  = time.localtime()
+    #change this value to play next minute, it is set to activate once an hour
+    if when[4] == 00:
+        break
 
 main()
