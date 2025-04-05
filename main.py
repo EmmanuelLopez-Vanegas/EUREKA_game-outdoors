@@ -202,7 +202,7 @@ def punishment():
     time.sleep(0.5)
     if ran == 3:
         i = 10
-        for i in range(10):
+        for i in range(10,0,-1):
             print(f'You will Blue Screen in {i}')
             i = i-1
             time.sleep(0.8)
@@ -240,14 +240,10 @@ def main():
 
     if game == 'complete':
         if loss == True:
-            punishment(loss, ask_game)
+            punishment()
         else:
             print(':)')
 
-while True:
-    when  = time.localtime()
-    #change this value to play next minute, it is set to activate once an hour
-    if when[4] == 00:
-        break
+
 
 main()
